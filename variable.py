@@ -29,7 +29,7 @@ Enter the code
 
 
 """
-ussd_code = int(input())
+ussd_code = (input())
 print(f"enter ussd: ")
 print("1. Account balance\n 2. Data Recharge\n 3. Data balance")
 option = int(input())
