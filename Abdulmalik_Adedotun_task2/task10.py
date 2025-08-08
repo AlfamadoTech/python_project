@@ -1,3 +1,4 @@
+# 10. School fees details
 school_name = input("What is the name of your school ")
 tuition_fee = float(input("Tuition fee is "))
 hostel_fee = float(input("Hostel fee is "))
