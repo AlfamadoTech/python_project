@@ -1,3 +1,4 @@
+# 9. Festival Details
 festival_name = input("What is the festival name: ")
 location = input("Which location is the festival holding place ")
 month = input("What month is the festival held ")
