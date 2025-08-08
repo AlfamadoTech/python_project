@@ -1,3 +1,4 @@
+# 5. Market details and daily revenue
 market_name = input("What is the name of the market ")
 number_trader = int(input("How many people trade in the market "))
 daily_revenue = float(input("How much does the market generate in a day "))
