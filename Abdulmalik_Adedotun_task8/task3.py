@@ -1,21 +1,16 @@
 # Online Store Cart Calculation
-list_of_items = ["Book", "Pen", "Bag", "Flask"]
-price_of_items = [500, 200, 3000, 5000]
-cart_total = 0
-list_price = dict(zip(list_of_items, price_of_items))
-pick_item = input("Pick item from list of item into cart: ").split(", ")
-for pick_item in list_of_items:
-    value = price_of_items
-    cart_total += value
-    print(f"Items: {pick_item} \n Total Price: {cart_total}")
-'''if pick_item in list_of_items:
-    value = list_price[pick_item]
-    cart_total += value
-    print(f"Items: {pick_item} \n Total Price: {cart_total}")
+items = ["book", "pen", "bag", "flask"]
+prices =[500, 100, 5000, 10000]
+pick_item = {}
+cart_total=0
 
-list_price = dict(zip(list_of_items, price_of_items))
-pick_item = input("Pick item from list of item into cart: ").split(", ")
-for pick_item in list_price:
-    cart_total = sum(pick_item.values())
-    print(f"Items: {pick_item} \n Total Price: {cart_total}")
-'''
+item1=int(input((f"how many {items[0]} do you want to buy: ")))
+item2 =int(input((f"how many {items[1]} do you want to buy: ")))
+item3=int(input((f"how many {items[2]} do you want to buy: ")))
+item4 = int(input((f"how many {items[3]} do you want to buy: ")))
+pick_item.update({"book" : item1*prices[0], "pen" : item2*prices[1], "bag" : item3*prices[2], "flask" : item4*prices[3]})
+print(pick_item)
+cart_total += pick_item["book"]
+cart_total += pick_item["pen"]
+cart_total += pick_item["bag"]
+print(f"you picked\n {item1}books\n{item2} pens\n{item3} bags\n{item4} flask\nTotal Price: {cart_total}")
