@@ -1,9 +1,10 @@
 # Unique voter system
-registered_voters = set()
-for name in range(10):
-    voter_full_name = input(f"voter full name {name+1}: ")
-    if voter_full_name in registered_voters:
-        print("Already registered")
-    else:
-        registered_voters.add(voter_full_name)
-        print(registered_voters)
+registered_voters = {"John", "Smith", "Mike"}
+#new voter name
+new_voter = input('Enter your name here: ').title()
+#Print message if voter already registered
+if new_voter in registered_voters:
+    print("Voter already registered")
+#Add new voter to set of already registered voters
+registered_voters.add(new_voter)
+print(registered_voters)
